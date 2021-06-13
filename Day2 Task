@@ -1,0 +1,90 @@
+PRINT A VALUE:
+
+print("30 days 30 hour challenge")
+print('30 days 30 hour challenge')
+30 days 30 hour challenge
+
+ASSIGNING STRING TO VARIABLE:
+
+>>> Hours = "thirty"
+>>> print(Hours)
+thirty
+
+INDEXING USING STRING:
+
+>>> Days = "Thirty days"
+>>> print(Days[2])
+i
+
+>>> Days = "Thirty days"
+>>> print(Days[0])
+T
+
+PRINT THE PARTICULAR VALUE FROM CERTAIN STRING:
+
+>>> Challenge = "I will win"
+>>> print(Challenge[7:10])
+win
+  
+PRINT THE LENGTH OF CHARACTER:
+
+>>> Challenge = "I will win"
+>>> print(len(Challenge))
+10
+ 
+ CONVERT STRING TO LOWER CHARACTER:
+
+>>> Challenge = "I will win"
+>>> print(Challenge.lower())
+i will win
+
+JOINING TWO STRING:
+
+>>> a ="30 days"
+>>> b ="30 hours"
+>>> c = a+ " " +b
+>>> print(c)
+30 days 30 hours
+
+ADDING SPACE DURING CONCATENATION:
+
+>>> a = "30 hours"
+>>> b = "30 days"
+>>> c = a+b
+>>> print(c)
+30 hours30 days
+
+USAGE:
+
+>>> text = "Thirty days and Thirty hours"
+>>> x = text.casefold()
+>>> print(x)
+thirty days and thirty hours
+
+>>> text = "Thirty days and Thirty hours"
+>>> x = text.capitalize()
+>>> print(x)
+Thirty days and thirty hours
+
+
+>>> text = "Thirty days and Thirty hours"
+>>> x = text.find("days")
+>>> print(x)
+7
+
+>>> text = "Thirty days and Thirty hours"
+>>> x = text.isalpha()
+>>> print(x)
+False
+
+>>> text = "Thirty days and Thirty hours"
+>>> x = text.isalnum()
+>>> print(x)
+False
+
+
+>>> text = "Dog09"
+>>> x = text.isalnum()
+>>> print(x)
+True
+>>> 
