@@ -1,7 +1,9 @@
 PRINT A VALUE:
 
-print("30 days 30 hour challenge")
-print('30 days 30 hour challenge')
+>>> print("30 days 30 hour challenge")
+30 days 30 hour challenge
+
+>>> print('30 days 30 hour challenge')
 30 days 30 hour challenge
 
 ASSIGNING STRING TO VARIABLE:
