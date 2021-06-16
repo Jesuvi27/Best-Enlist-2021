@@ -45,15 +45,15 @@ Ans:
 
 Create a tuple and print the reverse of the created tuple 
 Ans: 
-  my_tuple = [(1,2),(3,4),(5,6)] 
+  my_tuple = ((1,2),(3,4),(5,6)) 
   print(my_tuple[::-1])
     OUTPUT:
-      [(5, 6), (3, 4), (1, 2)]
+      ((5, 6), (3, 4), (1, 2))
 
 Create a tuple and convert tuple into list 
 Ans:
-  x=[(1,2),(3,4),(5,6)]
+  x=((1,2),(3,4),(5,6))
   y=list(sum(x,()))
   print(y)
   OUTPUT:
-    [1, 2, 3, 4, 5, 6]
+    (1, 2, 3, 4, 5, 6)
