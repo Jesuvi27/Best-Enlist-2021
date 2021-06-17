@@ -44,7 +44,10 @@ Ans:
 Ans: 
   a={5,3,2,4,1} 
   b={4,3,1,2,6} 
-  print(a-b)
+  a.difference_update(b)
+  print(a)
+  print(b)
   
   OUTPUT:
     {5}
+{1, 2, 3, 4, 6}
