@@ -10,19 +10,19 @@ mydb=mysql.connector.connect(host='Local Host',
                             )
 print(mydb)
 
-#2 Create a employee table and read all the employee name in the table using for loop
+#3 Create a employee table and read all the employee name in the table using for loop
 
 import mysql.connector
 mydb = mysql.connector.connect(
                                host="localhost",
-                               database = "Jesuvi Jeradin",
+                               database = "Jenni",
                                user ="root",
                                password="Jes279"
 )
 
 dbse = mydb.cursor()
 dbse.execute("CREATE TABLE Employee1 ( EMP_name VARCHAR(255), EMP_no int , EMP_city VARCHAR(255), EMPdep VARCHAR(255))")
-dbse.execute("INSERT INTO Employee ( EMP_name, EMP_no, EMP_city, EMPdep) VALUES  ('Harsha',27,'HYD','BI')")
+dbse.execute("INSERT INTO Employee ( EMP_name, EMP_no, EMP_city, EMPdep) VALUES  ('jenni',27,'KK','BI')")
 mydb.commit()
 
 dbse.execute("SHOW TABLES")
@@ -35,28 +35,21 @@ for value in dbse:
     print(value)
 
 
-#3 Create a multiple tables & insert data in table
+#2 Create a multiple tables & insert data in table
 
-import mysql.connector
-mydb= mysql.connector.connect(host='Local host',
-                              database='database',
-                              user='root',
-                              password='Jes279')
-
-dbse=mydb.cursor()
-dbse.excute("CREATE TABLE Employee (Emp_name Jesuvi(25),Emp_no int,Emp_city Jesuvi(259),Emp_dept Jesuvi(25))")
-dbse.excute("SHOW Tables")
-for value in dbse:
-    print(dbse)
-
-    import mysql.connector
-mydb= mysql.connector.connect(host='Local host',
-                              database='database',
-                              user='root',
-                              password='Jes279')
-
-dbse=mydb.cursor()
-dbse.excute("CREATE TABLE Employee (Emp_name Jesuvi(25),Emp_no int,Emp_city Jesuvi(25),Emp_dept Jesuvi(25))")
-dbse.excute("SHOW Tables")
-for value in dbse:
-    print(dbse)    
+mydb = mysql.connector.connect(
+  host="localhost",
+ user="root",
+  password="jes27",
+  database="database11"
+)
+dbse = mydb.cursor()
+dbse.execute("CREATE employee table(Employee_name VARCHAR(255), Employee_id int,Employee_dep VARCHAR(255))")
+dbse = mydb.cursor()
+dbse.execute("CREATE TABLE staff (name VARCHAR(255), id int ,city VARCHAR(255))")
+dbse =mydb.cursor()
+dbse.execute("CREATE TABLE seniors(reg INT(24) , name VARCHAR(255) , dob INT(19))")
+dbse = mydb.cursor()
+dbse.execute("SHOW TABLES")
+for i in dbse:
+  print(i)    
